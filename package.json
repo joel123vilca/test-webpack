@@ -4,7 +4,12 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "wbepack": "webpack",
+    "debug": "node --inspect --inspect-brk ./node_modules/webpack/bing",
+    "prod": "npm run webpack -- --mode production",
+    "dev": "npm run webpack -- --mode development --watch",
+    "prod:debug": "npm run debug -- --mode production",
+    "dev: debug": "npm run debug -- --mode development"
   },
   "keywords": [],
   "author": "",

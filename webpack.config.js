@@ -3,7 +3,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require('path');
 
 module.exports = {
-  entry: '/Applications/joel/frontend-project/src/app.js',
+  entry: './src/app.js',
   output: {
     path: path.resolve(__dirname, 'build'),
     filename: 'bundle.js'
@@ -15,7 +15,7 @@ module.exports = {
     rules: [
         {
             test: /\.css$/i,
-            use: [MiniCssExtractPlugin.loader, 'css-loader'],
+            use: [MiniCssExtractPlugin.loader , 'css-loader'],
         },
     ],
   },
